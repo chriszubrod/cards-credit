@@ -1,0 +1,15 @@
+{% block header %}
+
+    <header>
+            <section id="menu-section">
+                <button class="material-icons" id="menu-button" onclick="openMenuButton()" type="button">
+                    menu
+                </button>
+            </section>
+
+            <section id="icon-section">
+                <img id="icon-img" src="{{ url_for('static', filename='cc-com.svg') }}">
+            </section>
+    </header>
+
+{% endblock %}

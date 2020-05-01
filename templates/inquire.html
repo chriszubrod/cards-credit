@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+
+        <body>
+            {% include 'header.html' %}
+
+            {% include 'aside.html' %}
+            
+            <main id="inquire-main">
+                <form id="inquire-form">
+
+                    <h3 id="inquire-h">Inquiry</h3>
+                    
+                    <input type="text"
+                        id="name-input"
+                        class="form-input"
+                        name="name-input"
+                        onfocusout="nameOnFocusOut()"
+                        placeholder="Your Name: John Doe"
+                        required>
+
+                    <input type="email"
+                        id="email-input"
+                        class="form-input"
+                        name="email-input"
+                        placeholder="Your Email: john.doe@domain.com"
+                        required>
+
+                    <input type="number"
+                        id="year-input"
+                        class="form-input"
+                        name="year-input"
+                        onfocusout="yearOnFocusOut()"
+                        placeholder="Card Year: 2013"
+                        required>
+
+                    <input type="text"
+                        id="brand-input"
+                        class="form-input"
+                        name="brand-input"
+                        onfocusout="brandOnFocusOut()"
+                        placeholder="Card Brand: Panini"
+                        required>
+
+                    <input type="text"
+                        id="athlete-input"
+                        class="form-input"
+                        name="athlete-input"
+                        onfocusout="athleteOnFocusOut()"
+                        placeholder="Card Athlete: Steve Nash"
+                        required>
+
+                    <input type="number"
+                        id="value-input"
+                        class="form-input"
+                        name="value-input"
+                        onfocusout="valueOnFocusOut()"
+                        placeholder="Card Value: 100 for $100"
+                        required>
+
+                    <!-- dropdown input for card grade company...values PSA, BGS, Other -->
+                    <select id="company-select" form="inquire-form" name="company-select" required>
+                        <option value="" selected>Card Grade Company</option>
+                        <option value="PSA">PSA</option>
+                        <option value="BGS">BGS</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    
+                    <!-- dropdown input for card grade...values from 1 - 10 -->
+                    <select id="grade-select" form="inquire-form" name="grade-select" required>
+                        <option value="" selected>Card Grade</option>
+                        <option value="1">1.0</option>
+                        <option value="1.5">1.5</option>
+                        <option value="2">2.0</option>
+                        <option value="2.5">2.5</option>
+                        <option value="3">3.0</option>
+                        <option value="3.5">3.5</option>
+                        <option value="4">4.0</option>
+                        <option value="4.5">4.5</option>
+                        <option value="5">5.0</option>
+                        <option value="5.5">5.5</option>
+                        <option value="6">6.0</option>
+                        <option value="6.5">6.5</option>
+                        <option value="7">7.0</option>
+                        <option value="7.5">7.5</option>
+                        <option value="8">8.0</option>
+                        <option value="8.5">8.5</option>
+                        <option value="9">9.0</option>
+                        <option value="9.5">9.5</option>
+                        <option value="10">10.0</option>
+                    </select>
+                    
+                    <div id="button-div">
+                        <button id="cancel-button">Cancel</button>
+
+                        <button id="submit-button"
+                                formaction="/inquire"
+                                formmethod="POST">
+                                    Submit
+                        </button>
+                    </div>
+
+                </form>
+            </main>
+
+            {% include 'footer.html' %}
+
+        </body>
+
+    {% endblock %}

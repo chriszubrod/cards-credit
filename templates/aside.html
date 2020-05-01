@@ -1,0 +1,19 @@
+{% block aside %}
+
+    <aside id="nav-aside">
+
+        <a id="home-a" class="aside-a" href="{{ url_for('showHome') }}">
+            <i class="material-icons">house</i>
+            <span class="">Home</span>
+        </a>
+
+        <a id="mail-a" class="aside-a" href="{{ url_for('showInquire') }}">
+            <i class="material-icons">mail</i>
+            <span class="">Inquire</span>
+        </a>
+
+        <span id="bc-span" href="#">made by b. christopher</span>
+
+    </aside>
+      
+{% endblock %}
