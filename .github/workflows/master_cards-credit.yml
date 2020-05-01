@@ -33,5 +33,5 @@ jobs:
       with:
         app-name: 'cards-credit'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_787b00d32c6147fc8fd03386e9a6cf8c }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_688bac003cdd46f8b42e3ae3c9b981f5 }}
         package: './myapp.zip'
