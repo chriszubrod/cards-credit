@@ -16,6 +16,7 @@ import random
 import string
 
 app = Flask(__name__)
+app.secret_key = '1!2@3#4$'
 
 SCOPES = ['https://www.googleapis.com/auth/gmail.send']
 SERVICE_ACCOUNT_FILE = 'gmail-service-key.json'
@@ -111,5 +112,4 @@ def showConfirmation():
 
 
 if __name__=="__main__":
-    app.secret_key = '1!2@3#4$'
     app.run(debug=True)
