@@ -25,7 +25,6 @@ body {
     font-size: 16px;
     grid-template-rows: auto 1fr auto;
     min-height: 100%;
-    overflow-y: hidden;
 }
 
 /*
@@ -104,7 +103,7 @@ header {
     box-shadow: 5px 0px 10px 2px rgba(117,117,117,0.68);
     display: flex;
     flex-direction: column;
-    height: calc(100% - 110px);
+    height: calc(100% - 60px);
     left: 0;
     margin-top: 60px;
     overflow-x: hidden;
@@ -158,8 +157,6 @@ header {
     grid-row-start: 2;
     grid-row-end: 3;
     height: calc(100% - 50px);
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 #inquire-a {
@@ -249,10 +246,6 @@ header {
 #inquire-main {
     grid-row-start: 2;
     grid-row-end: 3;
-    height: calc(100% - 110px);
-    margin: 60px 0px 0px 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 #inquire-h {
@@ -402,13 +395,11 @@ button {
 
 footer {
     background-color: var(--primary-variant);
-    bottom: 0;
     color: var(--on-primary-color);
     display: flex;
     grid-row-start: 3;
     grid-row-end: 4;
     height: 50px;
-    position: absolute;
     width: 100%;
 }
 
