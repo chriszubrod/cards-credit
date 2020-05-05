@@ -138,9 +138,6 @@ header {
     color: var(--primary-variant);
 }
 
-
-
-
 /*
 *************************
 ******** Homepage *******
@@ -149,6 +146,13 @@ header {
 
 #home-main {
     height: calc(100% - 50px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#inquire-a {
+    color: var(--secondary-color);
+    text-decoration: none;
 }
 
 /* Cell Phone: Below 600px Wide */
@@ -157,6 +161,16 @@ header {
     #logo-img {
         padding: 25px 0px 0px 0px;
     }
+
+    p {
+        color: var(--primary-variant);
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        width: 90%;
+        margin: 10px auto;
+    }
+    
 }
 
 /* Tablet - Portrait: 600px and up */
@@ -165,6 +179,15 @@ header {
         display: flex;
         margin: 0px auto;
         width: 90%;
+    }
+
+    p {
+        color: var(--primary-variant);
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        width: 80%;
+        margin: 10px auto;
     }
 }
 
@@ -175,6 +198,15 @@ header {
         margin: 0px auto;
         width: 75%;
     }
+
+    p {
+        color: var(--primary-variant);
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        width: 60%;
+        margin: 10px auto;
+    }    
 }
 
 /* Desktop - 1200px and up */
@@ -183,6 +215,15 @@ header {
         display: flex;
         margin: 0px auto;
         width: 60%;
+    }
+
+    p {
+        color: var(--primary-variant);
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        width: 60%;
+        margin: 10px auto;
     }
 }
 
@@ -267,23 +308,33 @@ select {
 }
 
 button {
+    cursor: pointer;
     height: 36px;
     text-align: center;
     margin: 5px;
     width: 64px;
 }
 
-#cancel-button {
-    background-color: var(--background-color);
-    border: transparent;
-    border-radius: 5px;
-    color: var(--secondary-color);
+#cancel-div {
+    display: flex;
     font: "Work Sans";
     font-size: 15px;
     font-weight: 600;
+    justify-content: center;
+    margin-top: 8px;
 }
 
-#cancel-button:hover {
+#cancel-a {
+    background-color: var(--background-color);
+    border-radius: 5px;
+    color: var(--secondary-color);
+    height: 36px;
+    margin: 5px;
+    text-decoration: none;
+    width: 64px;
+}
+
+#cancel-a:hover {
     background-color: var(--primary-color);
     color: var(--on-primary);
 }
@@ -329,12 +380,13 @@ button {
 
 /*
 *************************
-******** HEADER *********
+******** FOOTER *********
 *************************
 */
 
 footer {
     background-color: var(--primary-variant);
+    bottom: 0;
     color: var(--on-primary-color);
     display: flex;
     height: 50px;
