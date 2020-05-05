@@ -11,6 +11,13 @@
                 <section id="logo-section">
                     <img id="logo-img" src="{{ url_for('static', filename='cardscredit-com.svg') }}">
                 </section>
+                <section id='p-section'>
+                    <p id="p-one">As collecting continues to evolve and prices continue to climb, don't give away your valuable cards at a discount to free up cash for your next great card.</p>
+                    <p id="p-two">At CardsCredit, we lend you money based off of the current value of your cards. We do this by taking possession of your valuable cards and holding them in escrow, in a bank vault, until you can pay back the borrowed amount.</p>
+                    <p id="p-three">We are the only source of capital in the world for the collecting market. Send us an
+                        <a id="inquire-a" href="{{ url_for('showInquire') }}"> inquiry </a>
+                        now, to find out how we can help you start flipping and selling cards for a living.</p>
+                </section>
             </main>
 
             {% include 'footer.html' %}

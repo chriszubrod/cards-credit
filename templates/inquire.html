@@ -92,7 +92,12 @@
                     </select>
                     
                     <div id="button-div">
-                        <button id="cancel-button">Cancel</button>
+                        
+                        <a id="cancel-a" href="{{ url_for('showHome') }}">
+                            <div id="cancel-div">
+                                Cancel
+                            </div>
+                        </a>
 
                         <button id="submit-button"
                                 formaction="/inquire"
